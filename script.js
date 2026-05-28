@@ -14,7 +14,6 @@ let books = loadData();
 
 // mapping-objects: 
 const genreLabels = {
-  choose: "Choose",
   class: "Classic Literature",
   histFic: "Historical Fiction",
   sciFi: "Science Fiction",
@@ -35,7 +34,6 @@ const genreLabels = {
 
 
 const langLabels = {
-  choose: "Choose",
   ara: "Arabic",
   eng: "English",
   nor: "Norwegian",
@@ -44,7 +42,6 @@ const langLabels = {
 
 
 const statusLabels = {
-  choose: "Choose",
   read: "✓ Read",
   didNotFinish: "DNF",
   toBeRead: "TBR"
@@ -52,7 +49,6 @@ const statusLabels = {
 
 
 const statusBadgeClasses = {
-  choose: "choose-badge",
   read: "read-badge",
   didNotFinish: "dnf-badge",
   toBeRead: "tbr-badge"

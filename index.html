@@ -29,9 +29,8 @@
 
                 <div class="genre">
                     <label for="genre">GENRE</label>
-                    <select name="genre" id="genre">
-                        <option value="choose">Choose</option>
-
+                    <select name="genre" id="genre" required>
+                        <option value="">Choose</option>
                         <option value="class">Classic Literature</option>
                         <option value="histFic">Historical Fiction</option>
                         <option value="sciFi">Science Fiction</option>
@@ -52,8 +51,8 @@
 
                 <div class="lang">
                     <label for="lang">LANGUAGE</label>
-                    <select id="lang" name="lang">
-                        <option value="choose">Choose</option>
+                    <select id="lang" name="lang" required>
+                        <option value="">Choose</option>
                         <option value="ara">Arabic</option>
                         <option value="eng">English</option>
                         <option value="nor">Norwegian</option>
@@ -63,8 +62,8 @@
 
                 <div class="status">
                     <label for="status">STATUS</label>
-                    <select id="status" name="status">
-                        <option value="choose">Choose</option>
+                    <select id="status" name="status" required>
+                        <option value="">Choose</option>
                         <option value="toBeRead">TBR</option>
                         <option value="read">Read</option>
                         <option value="didNotFinish">DNF</option>
@@ -129,7 +128,7 @@
 
             <div class="lang">
                 <label for="filter-lang">LANGUAGE</label>
-                <select id="filter-lang">
+                <select id="filter-lang" >
                     <option value="all">All</option>
                     <option value="ara">Arabic</option>
                     <option value="eng">English</option>
