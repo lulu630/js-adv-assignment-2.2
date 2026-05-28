@@ -144,7 +144,10 @@ h2 {
 
 textarea {
   resize: none;
+  outline: none;
+  border: 1px solid hsl(0, 0%, 0%);
 }
+
 
 
 .fav {
