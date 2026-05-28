@@ -411,6 +411,11 @@ button[type="submit"]:focus-visible {
 
 }
 
+.book-dates {
+  white-space: nowrap;
+  
+}
+
 .book-info-column p:first-child {
   font-weight: 700;
 }

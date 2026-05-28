@@ -129,6 +129,7 @@ function render(booksToRender) {
 
 
     const datesEl = document.createElement("p")
+    datesEl.classList.add("book-dates")
     datesEl.textContent = `${startDate} — ${endDate}`
 
 
@@ -180,8 +181,8 @@ function render(booksToRender) {
     infoColumn.append(
     authorEl,
     genreEl,
-    datesEl,
     langEl,
+    datesEl,
     statusBadge
   )
 
