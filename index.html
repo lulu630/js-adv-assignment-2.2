@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booklover</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main class="main-content"> 
+    <p class="abbr">BLR</p>
+    <div class="main-title"> 
+    <h1>Booklover's Registry</h1>
+    <h2>TRACK. READ. LOVE. REPEAT.</h2>
+    </div>
+        <section id="reg-form">
+            <form class="reg-form">
+                <div class="title">
+                    <label for="title">TITLE</label>
+                    <input type="text" id="title" name="title" placeholder="e.g. War and Peace" required>
+                </div>
+
+                <div class="author">
+                    <label for="author">AUTHOR</label>
+                    <input type="text" id="author" name="author" placeholder="e.g. Leo Tolstoy" required>
+                </div>
+
+                <div class="genre">
+                    <label for="genre">GENRE</label>
+                    <select name="genre" id="genre">
+                        <option value="choose">Choose</option>
+
+                        <option value="class">Classic Literature</option>
+                        <option value="histFic">Historical Fiction</option>
+                        <option value="sciFi">Science Fiction</option>
+                        <option value="fant">Fantasy</option>
+                        <option value="myst">Mystery</option>
+                        <option value="thrill">Thriller</option>
+                        <option value="rom">Romance</option>
+                        <option value="hor">Horror</option>
+                        <option value="bio">Biography</option>
+                        <option value="selfHelp">Self-help</option>
+                        <option value="psych">Psychology</option>
+                        <option value="hist">History</option>
+                        <option value="sci">Science</option>
+                        <option value="trav">Travel</option>
+                        <option value="poet">Poetry</option>
+                    </select>
+                </div>
+
+                <div class="lang">
+                    <label for="lang">LANGUAGE</label>
+                    <select id="lang" name="lang">
+                        <option value="choose">Choose</option>
+                        <option value="ara">Arabic</option>
+                        <option value="eng">English</option>
+                        <option value="nor">Norwegian</option>
+                        <option value="rus">Russian</option>
+                    </select>
+                </div>
+
+                <div class="status">
+                    <label for="status">STATUS</label>
+                    <select id="status" name="status">
+                        <option value="choose">Choose</option>
+                        <option value="toBeRead">TBR</option>
+                        <option value="read">Read</option>
+                        <option value="didNotFinish">DNF</option>
+                    </select>
+                </div>
+
+                <div class="start-date">
+                    <label for="start-date">START DATE</label>
+                    <input type="date" name="start-date" id="start-date">
+                </div>
+
+                <div class="end-date">
+                    <label for="end-date">END DATE</label>
+                    <input type="date" name="end-date" id="end-date">
+                </div>
+
+
+                <div class="fav">
+                    <label for="favorite">FAVORITE</label>
+                     <div class="checkbox-wrapper-12">
+  <div class="cbx">
+    <input id="favorite" name="favorite" type="checkbox">
+    <label for="favorite"></label>
+    <svg width="15" height="14" viewbox="0 0 15 14" fill="none">
+      <path d="M2 8.36364L6.23077 12L13 2"></path>
+    </svg>
+  </div>
+  <!-- Gooey-->
+  <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+    <defs>
+      <filter id="goo-12">
+        <fegaussianblur in="SourceGraphic" stddeviation="4" result="blur"></fegaussianblur>
+        <fecolormatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 22 -7" result="goo-12"></fecolormatrix>
+        <feblend in="SourceGraphic" in2="goo-12"></feblend>
+      </filter>
+    </defs>
+  </svg>
+</div>
+                </div>
+
+                 <div class="comment">
+                    <label for="comment">COMMENT</label>
+                    <textarea id="comment" name="comment" rows="5" placeholder="Write your comment here.."></textarea>
+                </div>
+
+                <button type="submit">ADD BOOK</button>
+            </form>
+        </section>
+
+    <section id="filters">
+        <div class="filters">
+            <div class="filter">
+                <label for="filter-status">FILTER BY STATUS</label>
+                <select id="filter-status">
+                    <option value="all">All</option>
+                    <option value="toBeRead">TBR</option>
+                    <option value="read">Read</option>
+                    <option value="didNotFinish">DNF</option>
+                    <option value="favorites">Favorites</option>
+                </select>
+            </div>
+
+            <div class="lang">
+                <label for="filter-lang">LANGUAGE</label>
+                <select id="filter-lang">
+                    <option value="all">All</option>
+                    <option value="ara">Arabic</option>
+                    <option value="eng">English</option>
+                    <option value="nor">Norwegian</option>
+                    <option value="rus">Russian</option>
+                </select>
+            </div>
+
+            <div class="genre">
+                <label for="filter-genre">GENRE</label>
+                <select name="genre" id="filter-genre">
+                    <option value="all">All</option>
+                    <option value="class">Classic Literature</option>
+                    <option value="histFic">Historical Fiction</option>
+                    <option value="sciFi">Science Fiction</option>
+                    <option value="fant">Fantasy</option>
+                    <option value="myst">Mystery</option>
+                    <option value="thrill">Thriller</option>
+                    <option value="rom">Romance</option>
+                    <option value="hor">Horror</option>
+                    <option value="bio">Biography</option>
+                    <option value="selfHelp">Self-help</option>
+                    <option value="psych">Psychology</option>
+                    <option value="hist">History</option>
+                    <option value="sci">Science</option>
+                    <option value="trav">Travel</option>
+                    <option value="poet">Poetry</option>
+                </select>
+            </div>
+
+
+            <div class="sort">
+                <label for="sort">SORT</label>
+                <select id="sort">
+                    <option value="title">Title</option>
+                    <option value="author">Author</option>
+                    <option value="newest">Newest First</option>
+                    <option value="oldest">Oldest First</option>
+                    <option value="fav">Favorites First</option>
+                </select>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="book-list"></section>
+
+
+    <div id="stats"></div>
+</main>
+</body>
+</html>
